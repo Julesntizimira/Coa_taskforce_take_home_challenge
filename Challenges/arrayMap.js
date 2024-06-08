@@ -1,13 +1,14 @@
-// declaration and initiation of given array and targeted sum
-const arr = [4, 2, 7, 1, 9, 5];
-const targetedSum = 17;
+/*
+Function that checks for a Contiguous Subarray summing up to the targeted sum.
 
-//start and end index
-const start = 0
-const end = arr.length - 1;
-
-//function that checks for  Contiguous Subarray
-function checkContigousSubArray(arr, targetedSum) {
+@param {array} arr - Input array.
+@param {number} targetedSum - Targeted sum to check for in the contiguous subarray.
+@return {boolean} - True if a contiguous subarray with the targeted sum exists, false otherwise.
+*/
+function checkContiguousSubArray(arr, targetedSum) {
+    // Start and end index for the array
+    const start = 0;
+    const end = arr.length - 1;
     for (let i = start; i <= end; i++) {
         let sum = arr[i];
         for (let j = i + 1; j <= end; j++) {
@@ -17,6 +18,6 @@ function checkContigousSubArray(arr, targetedSum) {
             }
         }
     }
-    return false
+    return false;
 }
-console.log(checkContigousSubArray(arr, targetedSum));
+module.exports = checkContiguousSubArray;
