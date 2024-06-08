@@ -21,3 +21,4 @@ The `challenges` directory contains two main files:
 2. `stringTransform.js`: This file contains a function that performs Task 2 as specified.
 
 Each file within the `challenges` directory is dedicated to a specific task and contains the necessary function to accomplish the task.
+Both functions can be imported from the module using require('path/to/modulename') and tested
