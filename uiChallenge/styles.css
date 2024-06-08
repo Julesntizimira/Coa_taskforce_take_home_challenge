@@ -24,7 +24,7 @@ body {
 /* gallery */
 .gallery {
     display: grid;
-    grid-template-columns: 293px 293px 293px 293px;
+    grid-template-columns: repeat(4, 293px);
     gap: 2px;
 }
 .img-container {
@@ -38,7 +38,7 @@ body {
 .img-container > img {
     object-fit: cover;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    transition: 0.3s ease-in-out;
+    transition:  0.3s ease-in-out;
 }
 
 .overlayer {
@@ -62,7 +62,8 @@ body {
     gap: 8px;
     width: 213px;
     height: 100px;
-    transition: 0.15s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(0);
 }
 .subject-name {
     width: 100%;
@@ -99,7 +100,7 @@ body {
 /* responsiveness */
 @media  (max-width: 767px) {
     .gallery {
-        grid-template-columns: 98.5px 98.5px 98.5px 98.5px;
+        grid-template-columns: repeat(4, 98.5px);
         width: 400px;
         height: 600px;
     }
