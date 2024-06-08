@@ -97,6 +97,34 @@ body {
     font-size: 14px;
 }
 
+/* Full-size image view */
+.fullsize-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.fullsize-container img {
+    max-width: 90%;
+    max-height: 90%;
+}
+.fullsize-container button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 /* responsiveness */
 @media  (max-width: 767px) {
     .gallery {

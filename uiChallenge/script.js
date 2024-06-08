@@ -19,3 +19,33 @@ containers.forEach((container) => {
     })
     
 })
+
+
+//fullsize view
+const fullsizeContainer = document.getElementById('fullsizeContainer');
+const fullsizeImage = document.getElementById('fullsizeImage');
+const closeButton = document.getElementById('closeButton');
+
+containers.forEach(container => {
+    
+    container.addEventListener('click', function () {
+        const image = this.querySelector('img')
+        const fullsizeSrc = image.getAttribute('data-fullsize');
+        console.log(fullsizeSrc)
+        fullsizeImage.src = fullsizeSrc;
+        fullsizeContainer.style.display = 'flex';
+    });
+});
+
+closeButton.addEventListener('click', () => {
+    fullsizeContainer.style.display = 'none';
+    fullsizeImage.src = '';
+});
+
+fullsizeContainer.addEventListener('click', (event) => {
+    if (event.target === fullsizeContainer) {
+        fullsizeContainer.style.display = 'none';
+        fullsizeImage.src = '';
+    }
+});
+
