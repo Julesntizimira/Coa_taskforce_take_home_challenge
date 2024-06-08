@@ -1,4 +1,4 @@
-// declaration and initiation of giva=en array and targeted sum
+// declaration and initiation of given array and targeted sum
 const arr = [4, 2, 7, 1, 9, 5];
 const targetedSum = 17;
 
