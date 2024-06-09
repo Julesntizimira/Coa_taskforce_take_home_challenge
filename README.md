@@ -4,7 +4,7 @@ This repository contains two main directories:
 
 - `uiChallenge`: This directory contains files and directories related to the UI challenge task.
 
-- `challenges`: This directory contains two files, each containing a function that performs a specific task as required.
+- `challenges`: This directory contains two files related to the coding challenges, each containing a function that performs a specific task as required.
 
 ## uiChallenge Directory
 
